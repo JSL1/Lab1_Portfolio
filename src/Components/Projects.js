@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import BRcover from '../Images/BurningRushCover.png';
-import Weathercover from '../Images/WeatherCover.png';npm
+import Weathercover from '../Images/WeatherCover.png';
 
 const Projects = () => {
     return (
