@@ -33,6 +33,9 @@ const Header = () => {
                 <div className="nav-link">
                     <Link to='./Contact'><span className='nav-link'>Contact</span></Link>
                 </div>
+                <div className="nav-link">
+                    <Link to='./Admin'><span className='nav-link'>Admin</span></Link>
+                </div>
             </div>
         </header>
     );

@@ -220,3 +220,8 @@ footer {
     background-color:#F8D6CC;
     margin-top: 
 }
+
+.admin-panel {
+    width: 800px;
+    margin: 0px auto;   
+}

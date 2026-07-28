@@ -3,6 +3,26 @@ import { Link } from "react-router-dom";
 import Debug from '../Images/debugging.png';
 import Gamedev from '../Images/game-development.png';
 import Webdev from '../Images/app-development.png';
+const refs =[
+    {
+        name: 'James B',
+        testimonial: 'Jeremy did a really great job on my website and now my sales are out of control! cha-ching!',
+        position: 'Sales Manager',
+        company: 'Newark Auto'
+    },
+    {
+        name: 'Dean T',
+        testimonial: 'Burning Rush is so fun I play it every day!',
+        position: 'Lead Developer',
+        company: 'Strictly Software'
+    },
+    {
+        name: 'Mike G',
+        testimonial: 'Jeremy St Pierre is extremely professional and easy to work with. I would hire him again in an instant.',
+        position: 'Product Manager',
+        company: 'SkyNet'
+    }
+];
 
 const Services = () => {
     return (
@@ -25,19 +45,13 @@ const Services = () => {
             </div>
         </div>
          <div className="references">
-                <div className='reference'>
-                    <p>"Jeremy did a really great job on my website and now my sales are out of control! cha-ching!"</p>
-                    <span>-James B.</span>
-                </div>
-                <div className='reference'>
-                    <p>"Burning Rush is so fun, I play it every day!"</p>
-                    <span>-Dean T.</span>
-                </div>
-                <div className='reference'>
-                    <p>"Jeremy St Pierre is extremely professional and easy to work with. I would hire him again in an instant."</p>
-                    <span>-Mike G.</span>
-                </div>
-            </div>
+                {refs.map(r => 
+                    <div className="reference">
+                        <p>{r.testimonial}</p>
+                        <span>{r.name}</span>
+                    </div>
+                )}
+        </div>
         </>
     );
 }

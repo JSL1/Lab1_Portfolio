@@ -10,6 +10,13 @@ import AboutMe from './Components/AboutMe';
 import Services from './Components/Services';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
+import Admin from './Components/Admin';
+import AddProject from './Components/Admin/AddProject';
+import EditProject from './Components/Admin/EditProject';
+import AddReference from './Components/Admin/AddReference';
+import EditReference from './Components/Admin/EditReference';
+import AddUser from './Components/Admin/AddUser';
+import EditUser from './Components/Admin/EditUser';
 
 const RouteSwitch = () => {
     return (
@@ -22,6 +29,13 @@ const RouteSwitch = () => {
             <Route path='/Services' element={<Services />} />
             <Route path='/Projects' element={<Projects />} />
             <Route path='/Contact' element={<Contact />} />
+            <Route path='/Admin' element={<Admin />} />
+            <Route path='/Admin/AddProject' element={<AddProject />} />
+            <Route path='/Admin/EditProject' element ={<EditProject />} />
+            <Route path='/Admin/AddReference' element={<AddReference />} />
+            <Route path='/Admin/EditReference' element={<EditReference />} />
+            <Route path='/Admin/AddUser' element={<AddUser />} />
+            <Route path='/Admin/EditUser' element={<EditUser />} />
         </Routes>
     );
 }
